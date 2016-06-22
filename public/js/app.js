@@ -4,6 +4,7 @@ $(document).ready(function(){
 
   var minutes = $('#minutes');
   var seconds = $('#seconds');
+  var breakBtn = $('#break');
 
   start.on('click', startCountdown);
 
@@ -11,6 +12,10 @@ $(document).ready(function(){
     setInterval(function(){
     var secondsVal = +seconds.text();
     var minutesVal = +minutes.text();
+    if(secondsVal === 0 && minutesVal === 0){
+      breakBtn.removeAttr('disabled');
+      breakBtn.removeClass('disabled');
+    }
 
       if(secondsVal === 0){
         minutes.text(minutesVal - 1);
