@@ -15,3 +15,5 @@ I am building a timer web application using
   5. As a user, when the timer reaches zero, the break button becomes enabled.
   6. As a user, When I click on the break button, the timer resets to 5 minutes.
   7. As a user, when the 5 minutes are up, the clock will reset to the original time.
+  8. As a user, when the timer reaches zero, a sound plays.
+  9. As a user, when I load the page, I see a description of a pomodoro timer.

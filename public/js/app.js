@@ -4,6 +4,8 @@ $(document).ready(function(){
   var minutes = $('#minutes');
   var seconds = $('#seconds');
   var breakBtn = $('#break');
+  var beepAudio = new
+  Audio('http://www.soundjay.com/button/beep-07.wav');
   var onBreak = false;
 
   start.on('click', startCountdown);
@@ -28,6 +30,7 @@ $(document).ready(function(){
        var secondsVal = +seconds.text();
        var minutesVal = +minutes.text();
        if(secondsVal === 0 && minutesVal === 0){
+         beepAudio.play();
          breakBtn.removeAttr('disabled');
          clearInterval(countdown);
          return;
