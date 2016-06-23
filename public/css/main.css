@@ -1,0 +1,24 @@
+html {
+  background-color: red;
+}
+
+body {
+  padding-top: 70px;
+  background-color: red;
+}
+
+#start {
+  background-color: green;
+  font-size: 80px;
+}
+
+#break {
+  background-color: black;
+  color: white;
+  font-size: 80px;
+}
+
+#timer {
+  font-size: 200px;
+  padding-left: 120px;
+}
