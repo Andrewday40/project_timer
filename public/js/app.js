@@ -5,17 +5,26 @@ $(document).ready(function(){
   var minutes = $('#minutes');
   var seconds = $('#seconds');
   var breakBtn = $('#break');
+  var onBreak = false;
 
   start.on('click', startCountdown);
   breakBtn.on('click', takeABreak);
 
+
   function takeABreak(){
     minutes.text('05');
     seconds.text('00');
+    onBreak = true;
     startCountdown();
   }
 
   function startCountdown(){
+    if(onBreak){
+      onBreak = false;
+    } else {
+      minutes.text('25');
+      seconds.text('00');
+    }
     var countdown = setInterval(function(){
        var secondsVal = +seconds.text();
        var minutesVal = +minutes.text();
