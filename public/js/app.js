@@ -13,8 +13,8 @@ $(document).ready(function(){
 
 
   function takeABreak(){
-    minutes.text('05');
-    seconds.text('00');
+    minutes.text('00');
+    seconds.text('05');
     onBreak = true;
     startCountdown();
   }
@@ -23,8 +23,8 @@ $(document).ready(function(){
     if(onBreak){
       onBreak = false;
     } else {
-      minutes.text('25');
-      seconds.text('00');
+      minutes.text('00');
+      seconds.text('10');
     }
     var countdown = setInterval(function(){
        var secondsVal = +seconds.text();

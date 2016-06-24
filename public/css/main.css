@@ -4,22 +4,21 @@
 }
 
 html {
-  background-color: red;
+  background-color: #FF6347;
 }
 
 body {
   padding-top: 70px;
-  background-color: red;
+  background-color: #FF6347;
 }
 
 #start {
-  background-color: green;
+  background-color: #47ff47;
   font-size: 80px;
 }
 
 #break {
-  background-color: black;
-  color: white;
+  background-color: #47e3ff;
   font-size: 80px;
 }
 
@@ -27,10 +26,10 @@ body {
   font-size: 200px;
   padding-left: 50px;
   font-family: 'digital-clock';
-  background-color: #B8B8B8;
+  background-color: #FFBF47;
 }
 
 #descrip {
-  background-color: #B8B8B8;
+  background-color: #ffa494;
   font-family: times new roman;
 }
