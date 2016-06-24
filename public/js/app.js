@@ -5,7 +5,7 @@ $(document).ready(function(){
   var seconds = $('#seconds');
   var breakBtn = $('#break');
   var beepAudio = new
-  Audio('http://www.soundjay.com/button/beep-07.wav');
+  Audio('http://www.soundjay.com/phone/sounds/rotary-phone-1-nr4.mp3');
   var onBreak = false;
 
   start.on('click', startCountdown);
