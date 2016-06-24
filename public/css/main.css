@@ -1,3 +1,8 @@
+@font-face{
+  font-family: 'digital-clock';
+  src: url(RADIOLAND.TTF);
+}
+
 html {
   background-color: red;
 }
@@ -20,5 +25,12 @@ body {
 
 #timer {
   font-size: 200px;
-  padding-left: 120px;
+  padding-left: 50px;
+  font-family: 'digital-clock';
+  background-color: #B8B8B8;
+}
+
+#descrip {
+  background-color: #B8B8B8;
+  font-family: times new roman;
 }
